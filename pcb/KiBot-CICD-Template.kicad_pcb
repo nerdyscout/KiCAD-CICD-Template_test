@@ -156,6 +156,8 @@
     (style (thickness 0.15) (arrow_length 1.27) (text_position_mode 0) (extension_height 0.58642) (extension_offset 0) keep_text_aligned)
   )
 
+  (segment (start 120.587 98.552) (end 122.237 98.552) (width 0.25) (layer "F.Cu") (net 1) (tstamp f1b36de5-a3ab-4ac0-88ff-1fbd8f2115d2))
+
   (zone (net 0) (net_name "") (layer "F.Cu") (tstamp 00000000-0000-0000-0000-0000604fd022) (hatch edge 0.508)
     (connect_pads (clearance 0.125))
     (min_thickness 0.125) (filled_areas_thickness no)
