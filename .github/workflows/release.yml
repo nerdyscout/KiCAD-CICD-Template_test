@@ -17,7 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Reuse
+      - name: REUSE
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: Reuse
