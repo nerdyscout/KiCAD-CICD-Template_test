@@ -22,7 +22,7 @@ on:
 env:
   schema: "pcb/*.kicad_sch"
   board: "pcb/*.kicad_pcb"
-  dir: .
+  dir: pcb
 
 jobs:
 # checks

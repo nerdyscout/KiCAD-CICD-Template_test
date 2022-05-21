@@ -17,18 +17,28 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Reuse
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: Reuse
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: KiBot
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: KiBot
-          token: ${{ secrets.PERSONAL_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: PlatformIO
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: PlatformIO
-          token: ${{ secrets.PERSONAL_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            pcb/*
+      
