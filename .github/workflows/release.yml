@@ -17,12 +17,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Reuse
-        uses: benc-uk/workflow-dispatch@v1
-        with:
-          workflow: REUSE
-          token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: KiBot
         uses: benc-uk/workflow-dispatch@v1
         with:
